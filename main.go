@@ -31,7 +31,7 @@ func getAppPath() (string, error) {
   switch runtime.GOOS {
   case "windows":
     return os.Getenv("LOCALAPPDATA") + "\\gitkraken\\Update.exe", nil
-  case "darwing":
+  case "darwin":
     return "/Applications/GitKraken.app/Contents/MacOS/GitKraken", nil
   default:
     return "", errors.New("This os is not currently supported!")
