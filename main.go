@@ -68,5 +68,5 @@ func execApp(path string, args []string) {
 
   cmd := exec.Command(path, args...)
   cmd.Dir = cwd
-  cmd.Run()
+  cmd.Start()
 }
